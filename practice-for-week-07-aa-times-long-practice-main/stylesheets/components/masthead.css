@@ -1,1 +1,75 @@
-/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* grid-template-rows: repeat(2, auto); */
+    grid-template-areas: 
+    "menu . actions"
+    ". tech ."
+    "date logo paper";
+    
+}
+.masthead__menu-and-search {
+    grid-area: menu;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.masthead__actions {
+    grid-area: actions;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.masthead__technologies {
+    grid-area: tech;
+}
+.masthead__date {
+    grid-area: date;
+}
+.masthead__logo {
+    grid-area: logo;
+}
+.masthead__paper {
+    grid-area: paper;
+}
+.fa {
+    font-size: 11px;
+    padding: 7px 9px 7px 9px;
+}
+.fa:hover {
+    background-color: lightgray;
+}
+.fa-cog {
+    padding-left: 10px;
+}
+.lang {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    margin: 5px;
+}
+.lang > span + span {
+    margin-left: 20px;
+}
+/* .lang2 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    margin: 5px;
+}
+.lang3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    margin: 5px;
+}
+.lang4 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    margin: 5px;
+} */
+/* .masthead__menu-and-search > div {
+    display: inline-block;
+    padding-left: 20px;
+}
