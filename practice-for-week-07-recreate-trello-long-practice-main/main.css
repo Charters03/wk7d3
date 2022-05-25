@@ -89,6 +89,81 @@ body {
     display: block;
   }
 }
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boards__sidebar {
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+}
+
+.boards__container > .boards__sidebar {
+  display: flexbox;
+  flex-shrink: 0;
+  flex-grow: 0;
+  size: 220px;
+}
+
+.boards__sidebar-container .title {
+  color: white;
+}
+
+.boards__sidebar-container a {
+  color: white;
+}
+
+.boards__sidebar-container .description {
+  color: lightblue;
+}
+
+.boards__group {
+  display: flexbox;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: hotpink;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 /* Supplied CSS follows. */
 .header-nav__group{
   margin: 0 685px 0 0;
