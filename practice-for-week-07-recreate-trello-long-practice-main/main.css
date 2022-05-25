@@ -1,7 +1,34 @@
 /* Your code here */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.header-nav__container {
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+  display: flex;
+}
+
+.header-nav__button#alerts {
+  background-color: #CF513D;
+}
+@media screen and (max-width: 730px) {
+  .header-nav__button#search {
+    visibility: collapse;
+  }
+  .header-nav__button#boards {
+    font-size: 0;
+  }
+}
 
 /* Supplied CSS follows. */
 .header-nav__group{
+  margin: 0 685px 0 0;
   display: flex;
 }
 
